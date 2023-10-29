@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Personal Portfolio website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,400;1,500&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ----------------header------------- -->
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.jpeg" alt="logo image" class="logo">
+            <ul id="sidemenu">
+                <li> <a href="#header">Home</a></li>
+                <li> <a href="#about">About</a></li>
+                <li> <a href="#services">Services</a></li>
+                <li> <a href="#portfolio">Portfolio</a></li>
+                <li> <a href="#contact">Contact</a></li>
+                <i class='bx bx-x' onclick="closemenu()" ></i>
+            </ul>
+            <i class='bx bx-menu' onclick="openmenu()" ></i>
+        </nav>
+        <div class="header-text">
+            <p>UI/ UX DESING</p>
+            <h1> Hi, I'm <span>krishan</span> from India.</h1>
+        </div>
+    </div>
+</div>
+
+<!-- ----------------About---------------------------- -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="rr.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+               <h1 class="sub-title"> About me</h1>
+               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non labore dignissimos eius aspernatur iure ipsum vitae a! Ex natus, minus molestiae excepturi sit obcaecati nisi similique cumque totam, perspiciatis sint odit alias molestias repudiandae mollitia, itaque quia reiciendis voluptatibus rerum dolore a? A omnis adipisci doloremque laudantium consectetur facilis, corporis quo explicabo, modi consequuntur veritatis delectus mollitia incidunt perferendis enim fugit sint .</p>
+
+               <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                <p class="tab-links" onclick="opentab('experience')"> Experience</p>
+                <p class="tab-links" onclick="opentab('education')"> Education</p>
+               </div>
+               <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li> <span> UI?UX</span><br>DESING WEB/APP INTERFACES</li>
+                    <li> <span> WEV DEVOLOPMENT</span><br>DESING WEB/APP INTERFACES</li>
+                    <li> <span>APP DEVELOPMENT</span><br>DESING WEB/APP INTERFACES</li>
+                </ul>
+               </div>
+               <div class="tab-contents" id="experience" >
+                <ul>
+                    <li> <span> 2021- current</span><br>DESING WEB/APP INTERFACES</li>
+                    <li> <span> 2019 -2021</span><br>DESING WEB/APP INTERFACES</li>
+                    <li> <span> 2017- 2019</span><br>DESING WEB/APP INTERFACES</li>
+                    <li> <span> 2016- 2017</span><br>DESING WEB/APP INTERFACES</li>
+                </ul>
+               </div>
+               <div class="tab-contents" id="education">
+                <ul>
+                    <li> <span> 2016</span><br>DESING WEB/APP INTERFACES</li>
+                    <li> <span> 2016</span><br>DESING WEB/APP INTERFACES</li>
+                    <li> <span>2015</span><br>DESING WEB/APP INTERFACES</li>
+                </ul>
+               </div>
+            </div>
+            </div>
+        </div>
+</div>
+
+<!-- ---------services------------------------ -->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title"> My Services</h1>
+        <div class="services-list">
+            <div> 
+                <i class='bx bx-code-alt'></i>
+                <h2> Web Desing</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas consectetur nihil incidunt? Repellendus iure, officiis sed dolores impedit nulla eligendi odit quibusdam.</p>
+                <a href="#"> Learn more</a>
+            </div>
+            <div> 
+                <i class='bx bx-crop'></i>
+                <h2> UX/UI Desing</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas consectetur nihil incidunt? Repellendus iure, officiis sed dolores impedit nulla eligendi odit quibusdam.</p>
+                <a href="#"> Learn more</a>
+            </div>
+            <div> 
+                <i class='bx bxl-apple'></i>
+                <h2> App Desing</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas consectetur nihil incidunt? Repellendus iure, officiis sed dolores impedit nulla eligendi odit quibusdam.</p>
+                <a href="#"> Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -----------Portfolio-------------- -->
+
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My  Work </h1>
+        <div class="work-list">
+        <div class="work">
+            <img src="grid.jpg".jpg" alt="">
+            <div class="layer">
+                <h3> Social media</h3>
+                <p> This app connected you to the talented people around the world Download it from play store.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+                    </div>
+        <div class="work">
+            <img src="grid.jpg" alt="">
+            <div class="layer">
+                <h3> Music App</h3>
+                <p> This app connected you to the talented people around the world Download it from play store.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="grid.jpg" alt="">
+            <div class="layer">
+                <h3> Online selling App</h3>
+                <p> This app connected you to the talented people around the world Download it from play store.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn">see more</a>
+    </div>
+</div>
+
+<!-- -----------------------contact---------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"> Contact me</h1>
+                <p> <i class='bx bxs-paper-plane' ></i> contact@example.com</p>
+                <p> <i class='bx bxs-phone'></i> 9486868647</p>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+                    <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                </div>
+                <a href="RESUME RAJA BABU.pdf" download class="btn btn2"> Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="name" placeholder="Name"  required>
+                    <input type="email" name="email" placeholder="Yoir Email"  required>
+                    <textarea name="message"  rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2"> submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> Copyright &copy; krishan.made with <i class='bx bxs-heart' ></i> by for his portfolio.</p>
+
+    </div>
+</div>
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
